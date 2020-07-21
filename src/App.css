@@ -36,3 +36,68 @@
     transform: rotate(360deg);
   }
 }
+
+.complex-number-parent {
+  width: 100px;
+}
+
+.complex-number-container {
+  display: grid;
+  grid-template-columns: 20px 45px 3px 10px 3px 45px 15px 15px 10px;
+  grid-template-rows: 1fr 20px;
+  grid-column-gap: 2px;
+  grid-row-gap: 0px;
+}
+
+.complex-input {
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+
+.complex-input:focus {
+  outline: none;
+}
+
+.real-component {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.addition {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.imaginary-component {
+  grid-area: 1 / 6 / 2 / 7;
+}
+.operator-symbol {
+  grid-area: 1 / 1 / 2 / 2;
+  margin-top: 5px;
+}
+.real-descriptor {
+  grid-area: 2 / 2 / 3 / 3;
+  font-size: 10pt;
+}
+.imaginary-descriptor {
+  grid-area: 2 / 5 / 3 / 7;
+  font-size: 10pt;
+}
+.imaginary-symbol {
+  grid-area: 1 / 7 / 2 / 8;
+  margin-top: 2px;
+}
+
+.normalize-button {
+  grid-area: 1 / 8 / 2 / 9;
+  margin-top: 8px;
+}
+
+.normalized-text {
+  grid-area: 1 / 9/ 2 / 10;
+  margin-top: 4px;
+  font-size: 10pt;
+}

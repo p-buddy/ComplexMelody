@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import React from 'react';
+import EditableComplexNumber from './components/common/editableComplexNumber';
+
 function App() {
+  const test = () => {
+    console.log('tet');
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <React.Fragment>
+      <EditableComplexNumber onValueChanged = {test} operator =
+           '' showDescriptors =
+       {
+    false
+       } />
+      <EditableComplexNumber onValueChanged = {test} operator='x' showDescriptors={
+        true}/>
+        <hr></hr>
+      <EditableComplexNumber onValueChanged = {test} operator =
+           '=' showDescriptors = {
+             true
+           } /></React.Fragment>);
 }
 
 export default App;
